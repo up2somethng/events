@@ -71,10 +71,20 @@
 
 					<!-- Post -->
 						<article class="box post post-excerpt">
-							<header>
-							<h2><a href="event-detail.html">Event 1</a></h2>
-							<p>Miesto konania, dátum, čas</p>
-							</header>
+							<header style="display: flex; align-items: center; justify-content: space-between;">
+								<!-- Názov podujatia -->
+								<h2 style="margin: 0;"><a href="event-detail.html">Event 1</a></h2>
+							  
+								<!-- Tlačidlo vedľa názvu -->
+								<button onclick="gtag('event', 'like_event', {event_category: 'interakcia', event_label: 'Event 1'});"
+										style="padding: 6px 12px; background-color: #4c7faf; color: white; border: none; border-radius: 5px; font-size: 0.9rem;">
+								  Páči sa mi to
+								</button>
+							  </header>
+							  
+							  <!-- Miesto, dátum, čas -->
+							  <p style="margin-top: 0.5rem;">Miesto konania, dátum, čas</p>
+							  
 						
 							<div class="info">
 							<span class="date"><span class="month">Jul<span>y</span></span> <span class="day">14</span><span class="year">, 2014</span></span>
